@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+
+.title {
+    height: auto;
+    width: 100vw;
+    background: white;
+    letter-spacing: 0.5rem;
+    padding: 2rem;
+    animation: example 3s;
+}
+
+@keyframes example {
+    0% {
+        filter: blur(1rem) grayscale(25%)
+    }
+    90% {
+        filter: blur(0) grayscale(5%)
+    }
+    95% {
+        filter: blur(0.2rem) grayscale(3%)
+    }
+    100% {
+        filter: blur(0) grayscale(0)
+    }
+}
+
+
+
+h1{
+    font-size: 3rem;
+    margin:0;
+}
+h2{
+    font-size: 2rem;
+    margin:0;
+}
+
+.calm {
+    background: url('sec1.jpg');
+}
+
+.concentration{
+    background: url('sec2.jpg');
+}
+.connect{
+    background: url('sec3.jpg');
+}
+
+.session-title {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, 30%);
+    color: White;
+
+}
+
+.session-title h1 {
+    letter-spacing: 1rem;
+    font-size: 6rem;
+    margin:-3rem;
+    
+
+}
+
+.session-intro {
+    height: 35vh;
+    line-height: 1.5rem;
+    padding: 2rem 4rem;
+    letter-spacing: 0.5rem;
+    position: relative;
+   
+}
+
+.session-intro h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.parallax {
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position:relative;
+
+}
+
+.learn-more {
+    padding: 7.5px 15px;
+    background: transparent;
+    border: 1px solid black;
+    bottom: 10%;
+    left:50%;
+    transform: translateX(-50%);
+
+   margin-left:auto;
+    position: absolute;
+    opacity: 0.7;
+    transition: all 1s;
+    cursor: pointer;
+
+}
+
+.learn-more:hover {
+    background: black;
+    color: white;
+    opacity: 1;
+}
