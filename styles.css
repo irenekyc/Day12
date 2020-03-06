@@ -47,7 +47,18 @@ h2{
 
 .calm {
     background: url('sec1.jpg');
+    animation: example2 3s;
 }
+
+@keyframes example2 {
+    0% {
+        opacity: 0.5;
+        filter: blur(50%)
+    }
+    100% {opacity: 1;
+        filter: blur(0)}
+}
+
 
 .concentration{
     background: url('sec2.jpg');
